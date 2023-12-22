@@ -1,10 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layouts/RootLayout";
+import Complete from "../pages/Complete/Complete";
 import ErrorPg from "../pages/Error/ErrorPg";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
+import OnGoing from "../pages/OnGoing/OnGoing";
 import Registration from "../pages/Registation/Registration";
 import TaskBoard from "../pages/TaskBoard/TaskBoard";
+import Todo from "../pages/Todo/Todo";
 import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
@@ -37,7 +40,7 @@ const router = createBrowserRouter([
         path: "/todo",
         element: (
           <PrivateRoutes>
-            <TaskBoard />
+            <Todo />
           </PrivateRoutes>
         ),
       },
@@ -45,7 +48,7 @@ const router = createBrowserRouter([
         path: "/ongoing",
         element: (
           <PrivateRoutes>
-            <TaskBoard />
+            <OnGoing />
           </PrivateRoutes>
         ),
       },
@@ -53,7 +56,7 @@ const router = createBrowserRouter([
         path: "/complete",
         element: (
           <PrivateRoutes>
-            <TaskBoard />
+            <Complete />
           </PrivateRoutes>
         ),
       },

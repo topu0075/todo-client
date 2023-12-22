@@ -1,7 +1,7 @@
 import React from "react";
 
-const UpComing = () => {
-  return <div>UpComing Task</div>;
+const Complete = () => {
+  return <div>Complete Task</div>;
 };
 
-export default UpComing;
+export default Complete;
